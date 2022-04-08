@@ -1,13 +1,12 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 28
-    buildToolsVersion '28.0.3'
+    compileSdk 30
 
     defaultConfig {
         applicationId "com.course.example.zooprovider"
-        minSdkVersion 17
-        targetSdkVersion 28
+        minSdkVersion 26
+        targetSdkVersion 30
 
     }
 
@@ -17,6 +16,7 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
         }
     }
+    buildToolsVersion '30.0.3'
 }
 
 dependencies {
