@@ -1,5 +1,6 @@
 /*This Activity acts as a Content Resolver. It is allowed to both read and write to the database
   because of the permissions in the Manifest.
+  It adds the initial records into the database.
 */
 package com.course.example.zooprovider;
 
@@ -49,7 +50,7 @@ public class Zoo extends Activity {
         
         values = new ContentValues();
         values.put("name", "rhino");
-        values.put("quantity",2);
+        values.put("quantity",3);
         getContentResolver().insert(uri, values);
         
         values = new ContentValues();
