@@ -6,6 +6,7 @@
 
     <application android:icon="@drawable/icon" android:label="@string/app_name">
         <activity android:name=".Zoo"
+            android:exported="true"
                   android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -13,9 +14,10 @@
             </intent-filter>
         </activity>
         
-	<provider android:name="ZooProvider"
+	<provider android:name="com.course.example.zooprovider.ZooProvider"
 	    		android:exported="true"
-                android:authorities="com.course.animal" 
+                android:enabled="true"
+                android:authorities="com.course.example.zooprovider"
                 android:readPermission="com.permission.testRead"
                 android:writePermission="com.permission.testWrite"/>
 	

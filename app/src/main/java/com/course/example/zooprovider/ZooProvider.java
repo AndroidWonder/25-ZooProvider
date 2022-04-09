@@ -18,15 +18,13 @@ public class ZooProvider extends ContentProvider {
 	  private static final int ANIMAL_ID = 2;
 
 	  private static final UriMatcher uriMatcher;
-
 	 
 	  static {
 	   uriMatcher = new UriMatcher(UriMatcher.NO_MATCH);
 	   uriMatcher.addURI(Animal.AUTHORITY, "animals", ANIMALS);      //all records of a table
 	   uriMatcher.addURI(Animal.AUTHORITY, "animals/#", ANIMAL_ID);  //specific record number
 	  }
-	  
-  
+
   @Override
   public boolean onCreate() {
     Context context = getContext();

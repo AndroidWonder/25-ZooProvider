@@ -10,7 +10,7 @@ public final class Animal {
     public static final String MIME_TYPE_SINGLE = Animal.MIME_ITEM_PREFIX + "/" + Animal.MIME_ITEM;
     public static final String MIME_TYPE_MULTIPLE = Animal.MIME_DIR_PREFIX + "/" + Animal.MIME_ITEM;
 
-    public static final String AUTHORITY = "com.course.animal";
+    public static final String AUTHORITY = "com.course.example.zooprovider";
     public static final String PATH_MULTIPLE = "animals";
     public static final Uri CONTENT_URI = Uri.parse("content://" + Animal.AUTHORITY + "/" + Animal.PATH_MULTIPLE);
 
