@@ -20,10 +20,14 @@
                 android:authorities="com.course.example.zooprovider"
                 android:readPermission="com.permission.testRead"
                 android:writePermission="com.permission.testWrite"/>
+
 	
     </application>
+
     <permission android:name="com.permission.testRead" android:icon="@drawable/marker"/>
     <uses-permission android:name="com.permission.testRead" />
+
     <permission android:name="com.permission.testWrite" android:icon="@drawable/marker"/>
     <uses-permission android:name="com.permission.testWrite" />
+
 </manifest>
