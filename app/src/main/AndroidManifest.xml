@@ -24,10 +24,10 @@
 	
     </application>
 
-    <permission android:name="com.permission.testRead" android:icon="@drawable/marker"/>
+    <permission android:name="com.permission.testRead" />
     <uses-permission android:name="com.permission.testRead" />
 
-    <permission android:name="com.permission.testWrite" android:icon="@drawable/marker"/>
+    <permission android:name="com.permission.testWrite" />
     <uses-permission android:name="com.permission.testWrite" />
 
 </manifest>
