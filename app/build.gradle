@@ -17,6 +17,7 @@ android {
         }
     }
     buildToolsVersion '33.0.1'
+    namespace 'com.course.example.zooprovider'
 }
 
 dependencies {
